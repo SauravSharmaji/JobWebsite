@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+margin: 0px auto 0px;
+background-color: #f4f4f9;
+color: #333;
+animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+.container {
+max-width: 1200px;
+margin: auto;
+margin-bottom: 15px;
+padding: 20px; 
+border: 1px solid #ddd;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+from {
+transform: translateY(20px);
+opacity: 0;
+}
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+h1, h2, h3 {
+text-align: center;
+color: #0056b3;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+text-transform: capitalize;
+}
+
+h1 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
+background-color: #f9f9f9;
+animation: tableFadeIn 1s ease-in-out;
+}
+
+@keyframes tableFadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+table, th, td {
+border: 1px solid #ddd;
+padding: 12px;
+text-align: left;
+}
+
+th {
+background-color: #0056b3 !important;
+color: #fff;
+animation: fadeIn 1s ease-in-out;
+}
+
+td {
+background-color: #fff;
+animation: fadeIn 1s ease-in-out;
+}
+
+.important-links a {
+display: block;
+padding: 10px;
+background-color: #2b76c5;
+color: #fff;
+text-align: center;
+margin: 10px 0;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.important-links a:hover {
+background-color: #0056b3;
+transform: translateY(-3px);
+box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+p {
+margin: 10px 0;
+animation: fadeIn 1s ease-in-out;
+}
+.department{
+color:#28A745;
+}
+header{
+margin: auto;
+max-width: 1200px; 
+margin-bottom: 25px;
+}
+.site-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 0 0;
+    text-align: center;
+   
+}.site-branding{
+text-align:center;
+}
+.site-title{
+margin:10px;
+}
+.site-title a {
+    margin: 10px 0;
+    font-size: 2em;
+    color: #fff;
+}
+.navbar {
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px 0; */
+}
+.navbar a {
+    color: #fff;
+    text-align: center;
+/*             padding: 14px 20px; */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.navbar a:hover {
+    background-color: #003d80;
+}
+.navbar a.active {
+    background-color: #004a99;
+}
+#site-header{
+justify-content:center;
+display:block;
+max-width:100%;
+padding:0px;
+}
+#site-header a{
+color:#fff;
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+
+    max-width: 100%;
+    margin: auto;
+    /* padding: 20px; */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.section {
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 30%;
+}
+.section h2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -20px 20px;
+    border-radius: 10px 10px 0 0;
+}
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+.section ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.section ul li a:hover {
+    color: #007bff;
+}
+.footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media screen and (max-width: 750px) {
+.navbar {
+flex-direction: column;
+}
+.navbar a {
+/*         margin: 5px 0; */
+/*         padding: 10px; */
+}
+.container {
+padding: 10px;
+}
+.section h2 {
+font-size: 1.5em;
+padding: 8px;
+}
+.footer {
+padding: 8px 0;
+}
+.section {
+ 
+    max-width: 100%;
+}
+}
+@media screen and (max-width: 450px){
+                .menu li{
+                width:100%;
+                    
+            }
+.site-title{
+margin:10px;
+}
+.site-title a {
+    margin: 10px;
+    font-size: 1em;
+    color: #fff;
+}
+}
+.site-navigation{
+justify-content:center;
+background-color:#003d80;
+
+}
+.menu{
+background-color:#003d80;
+padding:0;
+}
+/* Menu item styles */
+.menu li {
+border: 2px solid #003d80;
+margin: 5px;
+transition: background-color 0.3s ease, border 0.5s ease;
+border-radius:7px
+}
+
+/* Menu item hover styles with animation */
+.menu li:hover {
+background-color: #007bff;
+border: 2px solid white;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.section {
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 30%;
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+.section h2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -20px 20px;
+    border-radius: 10px 10px 0 0;
+}
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+.section ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.section ul li a:hover {
+    color: #007bff;
+}
+.footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media screen and (max-width: 750px) {
+            .section{
+                max-width:100%;
+            }
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar a {
+        margin: 5px 0;
+        padding: 10px;
+    }
+    .container {
+        padding: 10px;
+                    width:100%;
+    }
+    .section h2 {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+    .footer {
+        padding: 8px 0;
+    }
+}
